@@ -3,12 +3,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeList from "./components/RecipeList";
 import RecipeDetails from "./components/RecipeDetails";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <h1>Recipe Sharing App</h1>
+
+        <SearchBar />
 
         <Routes>
           <Route
